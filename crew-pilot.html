@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <script src="./src/script.js" async></script>
+  <title>Pilot Page</title>
+</head>
+<body>
+  <div id="crew" class ="homepage">
+    <div id ="desktop" class = "navBar">
+      <img alt = "CompanyLogo" src = "./src/assets/shared/logo.svg"/>
+      <div class ="navContainer">
+        <div class ="stick"></div>
+        <div class ="navLinks">
+          <a href ="./index.html" target="_self">00<span>Home</span></a>
+          <a href ="./destination-moon.html" target="_self">01<span>Destination</span></a>
+          <a href ="./crew-commander.html" target="_self">02<span>Crew</span></a>
+          <a href ="./technology-vehicle.html" target="_self">03<span>Technology</span></a>
+        </div>
+      </div>
+    </div>
+    <div id = "tablet" class = "navBar" style = "margin:0">
+      <img alt = "CompanyLogo" src = "./src/assets/shared/logo.svg"/>
+      <div class ="navContainer" style="height:auto">
+        <div class ="navLinks" style="min-height:auto">
+          <a href ="./index.html" target="_self">00<span>Home</span></a>
+          <a href ="./destination-moon.html" target="_self">01<span>Destination</span></a>
+          <a href ="./crew-commander.html" target="_self">02<span>Crew</span></a>
+          <a href ="./technology-vehicle.html" target="_self">03<span>Technology</span></a>
+        </div>
+      </div>
+    </div>
+    <div id = "mobileClosed" class = "navBar" style = "margin:0; align-items: flex-start;">
+      <img alt = "CompanyLogo" src = "./src/assets/shared/logo.svg"/>
+      <div class ="navContainer" style ="flex-direction:column">
+        <i id = "closed" class="fa fa-bars" onClick = "menuOpen()"></i>
+      </div>
+    </div>
+    <div id = "mobileOpen" class = "navBar addedBlur" style = "margin:0; align-items:flex-start">
+      <img alt = "CompanyLogo" src = "./src/assets/shared/logo.svg"/>
+      <div class ="navContainer" style ="flex-direction:column">
+        <i id ="open" class="fas fa-times" onClick = "menuClose()"></i>
+        <div class ="navLinks fadeAni" style ="flex-direction:column; height:20rem; backdrop-filter: none; background-color:transparent;">
+          <a href ="./index.html" target="_self" className="fadeText" style="margin-top:2rem">00<span>Home</span></a>
+          <a href ="./destination-moon.html" target="_self" className="fadeText"  style="margin-top:2rem">01<span>Destination</span></a>
+          <a href ="./crew-commander.html" target="_self" className="fadeText" style="margin-top:2rem">02<span>Crew</span></a>
+          <a href ="./destination-moon.html" target="_self" className="fadeText" style="margin-top:2rem">03<span>Technology</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class ="crewContentBox">
+     <div class = "infoBox">
+       <h2>02 <span>Meet Your Crew</span></h2>
+       <div class ="allInfo">
+         <h2 id ="title"></h2>
+         <h1 id ="crewName"></h1>
+         <p id ="crewInfo"></p>
+       </div>
+       <div class = "dots">
+        <a href="./crew-commander.html"><i id ="0" class="fa fa-circle"></i></a>
+        <a href="./crew-specialist.html"><i id ="1" class="fa fa-circle"></i></a>
+        <a href="./crew-pilot.html"><i id ="2" class="fa fa-circle"></i></a>
+        <a href="./crew-engineer.html"><i id ="3" class="fa fa-circle"></i></a>
+       </div>
+     </div>
+     <div id="Pilot" class ="crewImgBox">
+       <img id ="crewImg">
+     </div>
+    </div>
+  </div> 
+</body>
+</html>

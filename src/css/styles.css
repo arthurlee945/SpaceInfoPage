@@ -1,0 +1,1310 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Space+Grotesk:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #080808;
+  color: #f7f7f7;
+  font-family: "Space Grotesk", "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+}
+
+.navBar > img {
+  position: absolute;
+  margin: 1.5rem;
+  width: 3rem;
+}
+
+.navBar .navContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navBar .navContainer .stick {
+  position: relative;
+  z-index: 1;
+  left: 2rem;
+  height: 1px;
+  width: 25vw;
+  background: #f7f7f7;
+  opacity: 0.5;
+}
+
+.navBar .navContainer .navLinks {
+  min-width: 60vw;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: #f7f7f71f;
+}
+
+.navBar .navContainer .navLinks > a {
+  margin: 0 2rem 0 2rem;
+  text-decoration: none;
+  color: #f7f7f7;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(6rem - 2px);
+}
+
+.navBar .navContainer .navLinks > a:hover {
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.navBar .navContainer .navLinks > a > span {
+  margin-left: 0.5rem;
+  font-weight: lighter;
+}
+
+.navBar .navContainer > i {
+  margin: 2rem;
+  margin-right: 4.5rem;
+  font-size: 2rem;
+  color: #f7f7f7;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}
+
+.navBar .navContainer .fadeAni {
+  -webkit-animation: fadeani 0.25s linear;
+          animation: fadeani 0.25s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeani {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20rem;
+  }
+}
+
+@keyframes fadeani {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20rem;
+  }
+}
+
+.navBar .navContainer .fadeText {
+  opacity: 0;
+  -webkit-animation: seeth 0.2s linear;
+          animation: seeth 0.2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes seeth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes seeth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.addedBlur {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: #f7f7f71f;
+}
+
+.homepage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+.homepage .contentBox {
+  margin-top: 20vh;
+  height: 80vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.homepage .contentBox .insideBox {
+  height: 50%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15%;
+  padding-right: 15%;
+  letter-spacing: 0.1rem;
+}
+
+.homepage .contentBox .insideBox > h3 {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #c7c7c7;
+}
+
+.homepage .contentBox .insideBox > h1 {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  font-family: 'Times New Roman';
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 8rem;
+}
+
+.homepage .contentBox .insideBox > p {
+  width: 100%;
+  font-weight: lighter;
+  text-align: left;
+  color: #c7c7c7;
+}
+
+.homepage .contentBox .insideBox > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #f7f7f7;
+  color: #080808;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.homepage .contentBox .insideBox > a:hover {
+  -webkit-box-shadow: 0 0 1rem #080808;
+          box-shadow: 0 0 1rem #080808;
+}
+
+.homepage .contentBox .imgBox {
+  height: 70%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homepage .contentBox .imgBox > h2 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #7a7a7a;
+}
+
+.homepage .contentBox .imgBox > h2 > span {
+  margin-left: 1rem;
+  color: #f7f7f7;
+}
+
+.homepage .contentBox .imgBox > img {
+  margin: 8% 8% 0 8%;
+  width: 25vw;
+}
+
+.homepage .contentBox .infoBox {
+  height: 70%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homepage .contentBox .infoBox .desNav {
+  margin: 0 25% 8% 8%;
+}
+
+.homepage .contentBox .infoBox .desNav > a {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  margin-right: 3rem;
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
+.homepage .contentBox .infoBox .desNav > a:hover {
+  border-bottom: 4px solid #f7f7f7;
+}
+
+.homepage .contentBox .infoBox .desInfo > h1 {
+  margin: 0 35% 3% 8%;
+  font-family: 'Times New Roman';
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 8rem;
+}
+
+.homepage .contentBox .infoBox .desInfo > p {
+  margin: 0 35% 8% 8%;
+  color: #aaaaaa;
+  line-height: 2rem;
+}
+
+.homepage .contentBox .infoBox .detailBox {
+  border-top: 1px solid #7a7a7a;
+  padding-top: 1rem;
+  margin: 0 25% 0 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.homepage .contentBox .infoBox .detailBox .detail {
+  margin-right: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homepage .contentBox .infoBox .detailBox .detail > p {
+  color: #7a7a7a;
+}
+
+.homepage .contentBox .infoBox .detailBox .detail > h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.homepage .crewContentBox {
+  margin-top: 10vh;
+  height: 90vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.homepage .crewContentBox .infoBox {
+  height: 85%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.homepage .crewContentBox .infoBox > h2 {
+  min-height: 20%;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #7a7a7a;
+}
+
+.homepage .crewContentBox .infoBox > h2 > span {
+  margin-left: 1rem;
+  color: #f7f7f7;
+}
+
+.homepage .crewContentBox .infoBox .allInfo {
+  min-height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 0.1rem;
+}
+
+.homepage .crewContentBox .infoBox .allInfo > h2 {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: #7a7a7a;
+}
+
+.homepage .crewContentBox .infoBox .allInfo > h1 {
+  font-weight: 100;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  font-family: 'Times New Roman';
+}
+
+.homepage .crewContentBox .infoBox .allInfo > p {
+  margin-right: 30%;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  color: #d1d1d1;
+}
+
+.homepage .crewContentBox .infoBox .dots {
+  min-height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.homepage .crewContentBox .infoBox .dots > a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+.homepage .crewContentBox .crewImgBox {
+  height: 85%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.homepage .techContentBox {
+  margin-top: 15vh;
+  height: 85vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.homepage .techContentBox .techInfoBox {
+  width: 70%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.homepage .techContentBox .techInfoBox > h2 {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #7a7a7a;
+}
+
+.homepage .techContentBox .techInfoBox > h2 > span {
+  margin-left: 1rem;
+  color: #f7f7f7;
+}
+
+.homepage .techContentBox .techInfoBox .innerBox {
+  min-width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .techContentBox .techInfoBox .innerBox .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 4rem;
+}
+
+.homepage .techContentBox .techInfoBox .innerBox .links > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-weight: 300;
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #7a7a7a;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.homepage .techContentBox .techInfoBox .innerBox .techinfobox > h1 {
+  font-weight: 100;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  font-family: 'Times New Roman';
+}
+
+.homepage .techContentBox .techInfoBox .innerBox .techinfobox > p {
+  margin-right: 30%;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #d1d1d1;
+}
+
+.homepage .techContentBox .techImgBox {
+  width: 30%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.homepage .techContentBox .techImgBox > img {
+  height: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .homepage {
+    overflow: hidden;
+    background-size: cover;
+  }
+  .homepage .contentBox {
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .contentBox .insideBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .contentBox .insideBox > h3 {
+    text-align: center;
+  }
+  .homepage .contentBox .insideBox > h1 {
+    text-align: center;
+  }
+  .homepage .contentBox .insideBox > p {
+    text-align: center;
+  }
+  .homepage .contentBox .imgBox {
+    height: 50%;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .contentBox .imgBox > img {
+    margin: 8% 8% 0 8%;
+    width: 50vw;
+  }
+  .homepage .contentBox .infoBox {
+    height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .contentBox .infoBox .desNav {
+    margin: 0 8% 4% 8%;
+  }
+  .homepage .contentBox .infoBox .desNav > a {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .homepage .contentBox .infoBox .desInfo > h1 {
+    text-align: center;
+    margin: 0 8% 1.5% 8%;
+    font-size: 4rem;
+  }
+  .homepage .contentBox .infoBox .desInfo > p {
+    text-align: center;
+    margin: 0 8% 4% 8%;
+  }
+  .homepage .contentBox .infoBox .detailBox {
+    border-top: 1px solid #7a7a7a;
+    padding-top: 1rem;
+    margin: 0 8% 1.5% 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .homepage .contentBox .infoBox .detailBox .detail {
+    margin-right: 3.5rem;
+    margin-left: 3.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .contentBox .infoBox .detailBox .detail > p {
+    color: #7a7a7a;
+    font-size: 0.8rem;
+  }
+  .homepage .contentBox .infoBox .detailBox .detail > h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .homepage .crewContentBox {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .crewContentBox .infoBox {
+    height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .crewContentBox .infoBox > h2 {
+    text-align: center;
+    min-height: 20%;
+    width: 100%;
+  }
+  .homepage .crewContentBox .infoBox > h2 > span {
+    margin-left: 1rem;
+    color: #f7f7f7;
+  }
+  .homepage .crewContentBox .infoBox .allInfo {
+    min-height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    letter-spacing: 0.1rem;
+  }
+  .homepage .crewContentBox .infoBox .allInfo > h2 {
+    margin-bottom: 0.5rem;
+  }
+  .homepage .crewContentBox .infoBox .allInfo > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .homepage .crewContentBox .infoBox .allInfo > p {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+  }
+  .homepage .crewContentBox .infoBox .dots {
+    min-height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage .crewContentBox .infoBox .dots > a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .homepage .crewContentBox .crewImgBox {
+    height: 50%;
+    width: 100%;
+  }
+  .homepage .crewContentBox .crewImgBox > img {
+    max-width: 50%;
+  }
+  .homepage .techContentBox {
+    margin-top: 15vh;
+    height: 85vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .techContentBox .techInfoBox {
+    width: 100%;
+    height: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .homepage .techContentBox .techInfoBox > h2 {
+    text-align: center;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox {
+    min-width: 100%;
+    min-height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 4rem;
+    margin-left: 2rem;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .techinfobox {
+    margin-right: 2rem;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .techinfobox > h1 {
+    font-weight: 100;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .techinfobox > p {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    color: #d1d1d1;
+  }
+  .homepage .techContentBox .techImgBox {
+    width: 100%;
+    height: 35%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage .techContentBox .techImgBox > img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 3) {
+  .navBar > img {
+    position: absolute;
+    margin: 2rem;
+    margin-left: 1.5rem;
+    width: 2rem;
+  }
+  .homepage {
+    background-size: cover;
+    overflow: hidden;
+  }
+  .homepage .contentBox {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .contentBox .insideBox {
+    height: 50%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .contentBox .insideBox > h3 {
+    text-align: center;
+  }
+  .homepage .contentBox .insideBox > h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .homepage .contentBox .insideBox > p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .homepage .contentBox .insideBox > a {
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .homepage .contentBox .imgBox {
+    height: 50%;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .contentBox .imgBox > img {
+    margin: 4% 8% 0 8%;
+    width: 75vw;
+  }
+  .homepage .contentBox .infoBox {
+    height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .contentBox .infoBox .desNav {
+    margin: 0 4% 4% 4%;
+  }
+  .homepage .contentBox .infoBox .desNav > a {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .homepage .contentBox .infoBox .desInfo > h1 {
+    text-align: center;
+    margin: 0 8% 1.5% 8%;
+    font-size: 4rem;
+  }
+  .homepage .contentBox .infoBox .desInfo > p {
+    text-align: center;
+    margin: 0 2% 4% 2%;
+  }
+  .homepage .contentBox .infoBox .detailBox {
+    margin: 0;
+    margin-bottom: 1.5%;
+  }
+  .homepage .contentBox .infoBox .detailBox .detail {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .homepage .contentBox .infoBox .detailBox .detail > p {
+    color: #7a7a7a;
+    font-size: 0.8rem;
+  }
+  .homepage .contentBox .infoBox .detailBox .detail > h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .homepage .crewContentBox {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .crewContentBox .infoBox {
+    height: 60%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .crewContentBox .infoBox > h2 {
+    text-align: center;
+    min-height: 20%;
+    width: 100%;
+  }
+  .homepage .crewContentBox .infoBox > h2 > span {
+    margin-left: 1rem;
+    color: #f7f7f7;
+  }
+  .homepage .crewContentBox .infoBox .allInfo {
+    min-height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    letter-spacing: 0.1rem;
+  }
+  .homepage .crewContentBox .infoBox .allInfo > h2 {
+    margin-bottom: 0.5rem;
+  }
+  .homepage .crewContentBox .infoBox .allInfo > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .homepage .crewContentBox .infoBox .allInfo > p {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 1.5rem;
+  }
+  .homepage .crewContentBox .infoBox .dots {
+    min-height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage .crewContentBox .infoBox .dots > a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .homepage .crewContentBox .crewImgBox {
+    z-index: 0;
+    height: 40%;
+    width: 100%;
+  }
+  .homepage .crewContentBox .crewImgBox > img {
+    max-width: 75%;
+  }
+  .homepage .techContentBox {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .techContentBox .techInfoBox {
+    width: 100%;
+    height: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .homepage .techContentBox .techInfoBox > h2 {
+    text-align: center;
+    letter-spacing: 0.3rem;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox {
+    min-width: 100%;
+    min-height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .links > a {
+    margin: 0 1rem 0 1rem;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .techinfobox {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .techinfobox > h1 {
+    font-weight: 100;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .homepage .techContentBox .techInfoBox .innerBox .techinfobox > p {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    color: #d1d1d1;
+  }
+  .homepage .techContentBox .techImgBox {
+    width: 100%;
+    height: 35%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage .techContentBox .techImgBox > img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
